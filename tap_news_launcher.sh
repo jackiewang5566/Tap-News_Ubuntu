@@ -22,4 +22,5 @@ python click_log_processor.py &
 echo "============================"
 read -p "PRESS [ANY KEY] TO TERMINATE PROCESSES." PRESSKEY
 
-kill $(jobs -p)
+killall node
+killall python

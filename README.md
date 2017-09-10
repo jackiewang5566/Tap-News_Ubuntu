@@ -1,22 +1,18 @@
-To run this project, you need to install Redis, MongoDB, Pythoni first.
+This is Ubuntu version of Tap-News Project, a little bit different than Mac version Tap-News.
+This Project has been deployed on AWS ec2. Feel free to check below url to see the effect.
+ec2-34-228-62-188.compute-1.amazonaws.com:3000
+To run this project, you need to install Redis, MongoDB, Python and all necessary python packages(see requirement.txt).
 
-Run Steps:
-Running command 'sh tap_news_launcher.sh', waiting some time until the client side has been successfully build, 
-then open browser navigate to http://localhost:3000
-You should be able to see the whole tap-news app.
+If you want to running it in local, see below steps for Ubuntu.
 
-Or following below steps:
-1. Open terminal window, enter command 'redis-server' to start redis
-2. Open another terminal window, enter 'mongod' to start mongodb
-3. Go to web_server/client directory, run 'npm run build' doing the build for server.
-4. Go to web_server/server directory, run 'npm start' to start nodemon.
-5. Go to news_topic_modeling_service/server directory, run 'python server.py' to start predicting server.
-5. Go to backend_server directory, run 'python service.py' to start backend server
-6. Go to news_recommendation_service directory, run 'python recommendation_service.py' to start recommendation server
-7. Run 'python click_log_processor.py' to start recording user's log so that utilizing machine learning to send you recomended
-   news.
-8. Open your browser, go to localhost:3000 to see the tap-news app.
-
+Running steps:
+1. You need to install Redis, MongoDB and Python2.7 on your machine.
+2. Install pip so that you can use 'sudo pip install' to install required packages.
+3. Run 'sudo service redis-server start' to start your redis.
+4. Run 'sudo service mongod start' to run mongoDB on you machine.
+5. Then run 'sh news_pipeline_launcher.sh' to fetch news and create Tap-news on your mongoDB.
+6. Run 'sh tap_news_launcher.sh' to launch all necessary command.
+7. Open browser, navigate to http://localhost:3000, you should be able to see the Tap-news app.
 
 This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).
 

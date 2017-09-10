@@ -33,7 +33,7 @@ class NewsPanel extends React.Component {
             return;
         } 
 
-        let url = 'http://localhost:3000/news/userId/' + Auth.getEmail() + '/pageNum/' + this.state.pageNum;
+        let url = '/news/userId/' + Auth.getEmail() + '/pageNum/' + this.state.pageNum;
 
         // in case user email has special character, which may affect the url interpolation, so need to use encodeURIComponent
         // to escape special character

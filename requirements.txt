@@ -8,6 +8,7 @@ python-jsonrpc
 pymongo
 redis
 requests
+scipy
 sklearn
 tensorflow
 watchdog
