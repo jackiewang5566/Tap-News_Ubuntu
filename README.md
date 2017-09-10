@@ -1,6 +1,13 @@
-This is Ubuntu version of Tap-News Project, a little bit different than Mac version Tap-News.
-This Project has been deployed on AWS ec2. Feel free to check below url to see the effect.
+This is Ubuntu version of Tap-News Project, a little bit different configuration than Mac version Tap-News.
+
+This project is to scraping latest news and render it on the page, it implements infinity scrolling, login, signup, newspanel and newscard component using react and redux, using nodejs, express to connect backend RPC.
+
+Using Python to fetching news, using Tensorflow to do machine learning, as well as using AMQP to work as message broker.
+
+This Project has been deployed on AWS ec2. 
+Feel free to check below url to see the effect.
 ec2-34-228-62-188.compute-1.amazonaws.com:3000
+
 To run this project, you need to install Redis, MongoDB, Python and all necessary python packages(see requirement.txt).
 
 If you want to running it in local, see below steps for Ubuntu.
